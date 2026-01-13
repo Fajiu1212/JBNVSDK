@@ -1,0 +1,10 @@
+D:\ZHXNVClient\ZHXSDKDemo\TestC#\TestC_\bin\Debug\TestC_.exe.config
+D:\ZHXNVClient\ZHXSDKDemo\TestC#\TestC_\bin\Debug\TestC_.exe
+D:\ZHXNVClient\ZHXSDKDemo\TestC#\TestC_\bin\Debug\TestC_.pdb
+D:\ZHXNVClient\ZHXSDKDemo\TestC#\TestC_\obj\Debug\TestC_.csprojAssemblyReference.cache
+D:\ZHXNVClient\ZHXSDKDemo\TestC#\TestC_\obj\Debug\TestC_.Form1.resources
+D:\ZHXNVClient\ZHXSDKDemo\TestC#\TestC_\obj\Debug\TestC_.Properties.Resources.resources
+D:\ZHXNVClient\ZHXSDKDemo\TestC#\TestC_\obj\Debug\TestC_.csproj.GenerateResource.cache
+D:\ZHXNVClient\ZHXSDKDemo\TestC#\TestC_\obj\Debug\TestC_.csproj.CoreCompileInputs.cache
+D:\ZHXNVClient\ZHXSDKDemo\TestC#\TestC_\obj\Debug\TestC_.exe
+D:\ZHXNVClient\ZHXSDKDemo\TestC#\TestC_\obj\Debug\TestC_.pdb

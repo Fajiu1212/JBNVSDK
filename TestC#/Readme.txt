@@ -1,0 +1,1 @@
+展示如何使用C#调用DLL里的JBNV_GetFaceImage函数

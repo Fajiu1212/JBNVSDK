@@ -1,0 +1,795 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""JBSDKDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "JBSDKDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 JBSDKDemo"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "JBSDKDemo 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_JBSDKDEMO_DIALOG DIALOGEX 0, 0, 524, 394
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ZHXSDKDemo"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_USERNAME,53,99,57,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,160,99,57,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Connect",IDC_BUTTON_CONNECT,18,347,50,14
+    PUSHBUTTON      "打开通道",IDC_BUTTON_OPENCHANNEL,72,347,50,14
+    PUSHBUTTON      "开始录像",IDC_BUTTON_BEGIN_RECORD,126,347,50,14
+    PUSHBUTTON      "停止录像",IDC_BUTTON_STOP_RECORD,180,347,50,14
+    PUSHBUTTON      "关闭通道",IDC_BUTTON_CLOSECHANNEL,234,347,50,14
+    PUSHBUTTON      "DisConnect",IDC_BUTTON_CLOSECONNECT,291,348,50,14
+    DEFPUSHBUTTON   "关闭",IDOK,447,365,50,14
+    CONTROL         "",IDC_STATIC_IMAGE,"Static",SS_BLACKFRAME,14,147,176,
+                    144
+    GROUPBOX        "SDK",IDC_STATIC,7,138,507,248
+    LTEXT           "Name:",IDC_STATIC,16,102,34,8
+    LTEXT           "Pass:",IDC_STATIC,123,103,24,8
+    PUSHBUTTON      "功能测试",IDC_BUTTON_TEST,356,181,72,22
+    PUSHBUTTON      "上",IDC_BUTTON_PTZ_UP,287,161,17,17
+    PUSHBUTTON      "Search Server",IDC_BUTTON_SEARCH_SERVER,281,97,70,16
+    GROUPBOX        "云台",IDC_STATIC,253,149,85,144
+    PUSHBUTTON      "下",IDC_BUTTON_PTZ_DOWN,287,197,17,17
+    PUSHBUTTON      "左",IDC_BUTTON_LEFT,267,179,17,17
+    PUSHBUTTON      "右",IDC_BUTTON_PTZ_RIGHT,308,179,17,17
+    LTEXT           "调焦",IDC_STATIC,288,227,20,8
+    PUSHBUTTON      "-",IDC_BUTTON_FOCUS_FAR,262,223,20,15
+    PUSHBUTTON      "+",IDC_BUTTON_FOCUS_NEAR,309,223,20,15
+    PUSHBUTTON      "停止",IDC_BUTTON_PTZ_STOP,291,269,40,15
+    EDITTEXT        IDC_EDIT_CALL,258,247,30,15,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "调用",IDC_BUTTON_CALL,291,247,40,15
+    PUSHBUTTON      "本地抓图",IDC_BUTTON_LOCAL_SNAPSHOT,18,365,50,15
+    PUSHBUTTON      "远程抓图",IDC_BUTTON_REMOTE_SNAPSHOT,72,365,50,15
+    LTEXT           "通道状态:",IDC_STATIC_CHANNEL,13,295,175,8
+    CONTROL         "输出1",IDC_CHECK_SENSOR_OUT1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,325,50,10
+    CONTROL         "输出2",IDC_CHECK_SENSOR_OUT2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,80,325,50,10
+    LTEXT           "探头输出:",IDC_STATIC,13,313,80,8
+    PUSHBUTTON      "局部放大",IDC_BUTTON_ZOOM,126,365,50,15
+    CONTROL         "",IDC_STATIC_SECOND_IMAGE,"Static",SS_BLACKFRAME,193,
+                    147,55,50
+    PUSHBUTTON      "第二窗口",IDC_BUTTON_SECOND_WND,198,207,50,14
+    CONTROL         "Slider1",IDC_SLIDER_BUFFER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,206,313,100,10
+    LTEXT           "播放缓冲调整:",IDC_STATIC,206,297,60,8
+    CONTROL         "",IDC_STATIC_THREE_IMAGE,"Static",SS_BLACKFRAME,193,241,
+                    55,50
+    PUSHBUTTON      "显示切换",IDC_BUTTON_SWITCH,180,365,50,15
+    LTEXT           "000",IDC_STATIC_MIN_BUFFER,312,311,14,9
+    PUSHBUTTON      "获取状态",IDC_BUTTON_GET_SERVER_STATE,234,365,50,14
+    PUSHBUTTON      "自动",IDC_BUTTON_AUTO,257,269,32,15
+    PUSHBUTTON      "Setup Ocx Demo",IDC_BUTTON_OCX_TEST,112,118,83,22
+    PUSHBUTTON      "File Player Demo",IDC_BUTTON_FILE_PLAYER,15,118,83,22
+    PUSHBUTTON      "Talkback Demo",IDC_BUTTON_TALKBACK,209,118,83,22
+    PUSHBUTTON      "Remote Player Demo",IDC_BUTTON_REMOTE_PLAYER,306,118,83,
+                    22
+    CONTROL         "List1",IDC_LIST_SERVER,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,7,507,85
+    LTEXT           "Static",IDC_STATIC_INFO,356,313,158,10
+    PUSHBUTTON      "音量设置",IDC_BUTTON_A_VOL,291,365,50,14
+    PUSHBUTTON      "人脸库管理",IDC_BUTTON_FACE_LIB,356,148,72,22
+    PUSHBUTTON      "反向连接演示",IDC_BUTTON_LISTEN,434,148,72,22
+END
+
+IDD_DIALOG_OCX_TEST DIALOG DISCARDABLE  0, 0, 558, 411
+STYLE DS_MODALFRAME | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ocx Control Test"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,495,386,56,17
+    CONTROL         "",IDC_JBNVOCX_CTRL,
+                    "{97197A3A-091E-488D-B5BA-58EAD9819B4C}",WS_TABSTOP,7,7,
+                    544,375
+    PUSHBUTTON      "Connect",IDC_BUTTON_OPENSERVER,7,386,56,17
+    PUSHBUTTON      "Setup",IDC_BUTTON_SETUP,67,386,56,17
+    PUSHBUTTON      "OpenChannel",IDC_BUTTON_OCX_CHANNEL,127,386,56,17
+    PUSHBUTTON      "CloseChannel",IDC_BUTTON_CLOSE_CHANNEL,307,386,56,17
+    PUSHBUTTON      "DisConnect",IDC_BUTTON_CLOSE_SERVER,367,386,56,17
+    PUSHBUTTON      "SnapShot",IDC_BUTTON_SNAPSHOT,187,386,56,17
+    PUSHBUTTON      "PlayPage",IDC_BUTTON_SHOW_PLAYPAGE,247,386,56,17
+    PUSHBUTTON      "Chn 9",IDC_BUTTON_CHN9,427,386,56,17
+END
+
+IDD_DIALOG_LOGON DIALOG DISCARDABLE  0, 0, 225, 112
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,108,91,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,168,90,50,14
+    LTEXT           "服务器",IDC_STATIC,7,13,43,9
+    EDITTEXT        IDC_EDIT_SERVER,59,7,100,13,ES_AUTOHSCROLL
+    LTEXT           "端口",IDC_STATIC,7,30,50,11
+    EDITTEXT        IDC_EDIT_PORT,59,27,50,13,ES_AUTOHSCROLL
+    LTEXT           "用户名",IDC_STATIC,7,50,34,10
+    EDITTEXT        IDC_EDIT_USERNAME,59,47,70,13,ES_AUTOHSCROLL
+    LTEXT           "密码",IDC_STATIC,7,72,39,9
+    EDITTEXT        IDC_EDIT_PASSWORD,59,67,70,13,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_PLAYER_FILE DIALOG DISCARDABLE  0, 0, 354, 345
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Player Demo"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "OpenFile",IDC_BUTTON_OPENFILE,7,302,51,16
+    PUSHBUTTON      "Pause",IDC_BUTTON_PAUSE,131,302,51,16
+    PUSHBUTTON      "Stop",IDC_BUTTON_STOP,193,322,51,16
+    PUSHBUTTON      "Release",IDC_BUTTON_RELEASE,255,322,51,16
+    CONTROL         "",IDC_STATIC_PLAY,"Static",SS_BLACKFRAME,7,7,340,260
+    LTEXT           "00:00:00",IDC_STATIC_START_TIME,7,273,41,13
+    PUSHBUTTON      "Step In",IDC_BUTTON_STEP_IN,193,302,51,16
+    PUSHBUTTON      "Step Out",IDC_BUTTON_STEP_OUT,255,302,51,16
+    PUSHBUTTON      "Play",IDC_BUTTON_PLAY,69,302,51,16
+    LTEXT           "00:00:00",IDC_STATIC_TOTALTIME,289,273,43,13
+    PUSHBUTTON      "PlayFast",IDC_BUTTON_PLAYFAST,69,322,51,16
+    PUSHBUTTON      "FastBack",IDC_BUTTON_FASTBACK,131,322,51,16
+    PUSHBUTTON      "Capture",IDC_BUTTON_CAPTURE,7,322,51,16
+    CONTROL         "Slider1",IDC_SLIDER_PLAYPOS,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,54,
+                    275,231,10
+END
+
+IDD_DIALOG_PLAYER_REMOTE DIALOG DISCARDABLE  0, 0, 449, 271
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Server File Player"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "Play",IDC_BUTTON_FILE_PLAY,380,208,54,15
+    PUSHBUTTON      "Play By Time",IDC_BUTTON_REMOTE_PLAY_BY_TIME,189,249,54,
+                    15
+    LTEXT           "Begin:",IDC_STATIC,65,238,23,8
+    LTEXT           "End:",IDC_STATIC,65,250,20,8
+    CONTROL         "DateTimePicker1",IDC_DTP_DATE_BEGIN,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,90,235,54,12
+    CONTROL         "DateTimePicker2",IDC_DTP_TIME_BEGIN,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,154,235,
+                    30,12
+    CONTROL         "DateTimePicker1",IDC_DTP_DATE_END,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,90,252,54,12
+    CONTROL         "DateTimePicker2",IDC_DTP_TIME_END,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,154,252,
+                    30,12
+    CONTROL         "",IDC_STATIC_PLAY,"Static",SS_BLACKFRAME,7,7,286,220
+    GROUPBOX        "Play By File Name",IDC_STATIC,299,7,143,221
+    CONTROL         "List1",IDC_LIST_REPLAY_FILES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,304,19,132,185
+    PUSHBUTTON      "Search",IDC_BUTTON_SEARCH,305,208,54,15
+END
+
+IDD_DIALOG_TALKBACK DIALOG DISCARDABLE  0, 0, 244, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Talkback"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "开始对讲",IDC_BUTTON_BEGINTALK,134,48,50,14
+    PUSHBUTTON      "结束对讲",IDC_BUTTON_STOPTALK,187,48,50,14
+    EDITTEXT        IDC_EDIT_SERVER,66,7,97,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PORT,66,22,41,12,ES_AUTOHSCROLL
+    LTEXT           "服务器地址",IDC_STATIC,7,7,50,13
+    LTEXT           "端口",IDC_STATIC,7,24,50,13
+END
+
+IDD_DIALOG_AUDIO DIALOG DISCARDABLE  0, 0, 360, 92
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "声音音量"
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER_ADC,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,137,19,179,10
+    LTEXT           "(0x00--0x7F)",IDC_STATIC,85,17,46,10
+    LTEXT           "0x7F",IDC_STATIC_ADC,320,19,23,9
+    LTEXT           "ADC输入音量",IDC_STATIC,7,18,61,8
+    LTEXT           "DAC输出音量",IDC_STATIC,7,39,61,10
+    CONTROL         "Slider2",IDC_SLIDER_DAC,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,137,40,179,10
+    LTEXT           "(0x00--0x7F)",IDC_STATIC,85,39,46,10
+    LTEXT           "0x7F",IDC_STATIC_DAC,320,40,23,9
+    LTEXT           "输入端增益控制",IDC_STATIC,7,62,61,8
+    CONTROL         "Slider3",IDC_SLIDER_GAIN,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,137,61,179,10
+    LTEXT           "(0x00--0x1F)",IDC_STATIC,85,61,46,10
+    LTEXT           "0x7F",IDC_STATIC_GAIN,320,61,23,9
+END
+
+IDD_DIALOG_FACE_MANAGE DIALOG DISCARDABLE  0, 0, 429, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "人脸库管理"
+FONT 10, "宋体"
+BEGIN
+    PUSHBUTTON      "删除所有",IDC_BUTTON_DELETE_ALL,359,107,63,20
+    PUSHBUTTON      "增加",IDC_BUTTON_ADD,359,29,63,20
+    PUSHBUTTON      "修改",IDC_BUTTON_MODIFY,359,55,63,20
+    PUSHBUTTON      "删除",IDC_BUTTON_DEL,359,81,63,20
+    CONTROL         "List1",IDC_LIST_FACE,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,7,318,208
+    COMBOBOX        IDC_COMBO_ROLE,64,224,48,45,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "黑白名单",IDC_STATIC,22,224,39,13,SS_CENTERIMAGE
+    CTEXT           "页 数",IDC_STATIC,125,224,38,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_PAGE,174,224,63,52,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,63,249,55,13,ES_AUTOHSCROLL
+    CTEXT           "姓名",IDC_STATIC,40,248,19,15,SS_CENTERIMAGE
+    PUSHBUTTON      "搜索",IDC_BUTTON_SERACH,359,235,63,20
+    PUSHBUTTON      "批量增加",IDC_BUTTON_BATCH_INCREASE,360,133,62,20
+    PUSHBUTTON      "人脸库导入",IDC_BUTTON_FACE_IMPORT,360,159,62,20
+    PUSHBUTTON      "人脸库导出",IDC_BUTTON_FACE_EXPORT,359,185,63,20
+    PUSHBUTTON      "出入记录下载",IDC_BUTTON_DOWNLOAD_REC,359,211,63,20
+END
+
+IDD_DIALOG_FACE_MODITY DIALOG DISCARDABLE  0, 0, 484, 293
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    CONTROL         "",IDC_STATIC_SRC,"Static",SS_BLACKFRAME,7,10,168,238
+    PUSHBUTTON      "选择照片",IDC_BUTTON_SELECT_PIC,246,264,67,22
+    PUSHBUTTON      "取消",IDCANCEL,426,265,50,16
+    PUSHBUTTON      "确定",IDOK,361,265,57,17
+    LTEXT           "姓名",IDC_STATIC_NAME,184,25,22,15,SS_CENTERIMAGE
+    LTEXT           "性别",IDC_STATIC_SEX,184,51,27,16,SS_CENTERIMAGE
+    LTEXT           "年龄",IDC_STATIC_AGE,184,80,24,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_NAME,246,24,60,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AGE,246,78,49,16,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_SEX,246,55,41,37,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "身份证",IDC_STATIC,182,105,28,16,SS_CENTERIMAGE
+    LTEXT           "电话号码",IDC_STATIC,181,129,37,20,SS_CENTERIMAGE
+    LTEXT           "IC卡号",IDC_STATIC,182,159,24,8,SS_CENTERIMAGE
+    LTEXT           "其他",IDC_STATIC,182,180,33,13,SS_CENTERIMAGE
+    LTEXT           "唯一码",IDC_STATIC,182,201,33,16,SS_CENTERIMAGE
+    LTEXT           "黑白名单",IDC_STATIC,182,227,41,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_ID,246,105,118,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TEL,246,131,118,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ICCARD,246,153,118,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OTHER,246,177,118,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_UUID,246,203,119,15,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_ROLE,246,230,63,56,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC_FACE,"Static",SS_BLACKFRAME,402,7,75,96
+    LTEXT           "",IDC_STATIC_INFO,7,252,301,10
+END
+
+IDD_DIALOG_BACK_CONNECT DIALOG DISCARDABLE  0, 0, 273, 209
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,157,188,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,216,188,50,14
+    LTEXT           "Static",IDC_STATIC,7,7,51,10
+    COMBOBOX        IDC_COMBO_SERVER,64,7,127,120,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Start Back Connect Listen",IDC_BUTTON_START,7,47,130,17
+    PUSHBUTTON      "Open Server By Back Connect",
+                    IDC_BUTTON_OPEN_BACK_CONNECT,7,71,130,17
+    PUSHBUTTON      "Stop Back Connect",IDC_BUTTON_END,7,95,130,17
+    LTEXT           "",IDC_STATIC_INFO,7,26,238,14
+    PUSHBUTTON      "Open Channel",IDC_BUTTON_OPEN_CHANNEL,7,121,130,17
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "JBSDKDemo Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "JBSDKDemo\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "JBSDKDemo.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "JBSDKDemo 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_JBSDKDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 514
+        VERTGUIDE, 356
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 388
+        HORZGUIDE, 313
+    END
+
+    IDD_DIALOG_OCX_TEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 551
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 403
+    END
+
+    IDD_DIALOG_LOGON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_DIALOG_PLAYER_FILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 347
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 338
+    END
+
+    IDD_DIALOG_PLAYER_REMOTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 442
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+
+    IDD_DIALOG_TALKBACK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_DIALOG_AUDIO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 353
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_DIALOG_FACE_MANAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 422
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 292
+    END
+
+    IDD_DIALOG_FACE_MODITY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 477
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 286
+    END
+
+    IDD_DIALOG_BACK_CONNECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 266
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_OCX_TEST DLGINIT
+BEGIN
+    IDC_JBNVOCX_CTRL, 0x376, 28, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x5456, 0x0000, 0x3a30, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_DIALOG_FACE_MANAGE DLGINIT
+BEGIN
+    IDC_COMBO_ROLE, 0x403, 5, 0
+0xf9cb, 0xd0d3, "\000" 
+    IDC_COMBO_ROLE, 0x403, 7, 0
+0xdaba, 0xfbc3, 0xa5b5, "\000" 
+    IDC_COMBO_ROLE, 0x403, 7, 0
+0xd7b0, 0xfbc3, 0xa5b5, "\000" 
+    IDC_COMBO_ROLE, 0x403, 8, 0
+0x4956, 0xbf50, 0xc8cd, 0x00cb, 
+    IDC_COMBO_ROLE, 0x403, 7, 0
+0xb0c4, 0xfac9, 0xcbc8, "\000" 
+    0
+END
+
+IDD_DIALOG_FACE_MODITY DLGINIT
+BEGIN
+    IDC_COMBO_SEX, 0x403, 3, 0
+0xd0c4, "\000" 
+    IDC_COMBO_SEX, 0x403, 3, 0
+0xaec5, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 JBSDKDemo(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_JBSDKDEMO_DIALOG DIALOGEX 0, 0, 453, 369
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "JBSDKDemo"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_USERNAME,53,99,57,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,160,99,57,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Connect",IDC_BUTTON_CONNECT,18,325,50,14
+    PUSHBUTTON      "OpenChannel",IDC_BUTTON_OPENCHANNEL,72,325,50,14
+    PUSHBUTTON      "Begin Rec",IDC_BUTTON_BEGIN_RECORD,126,325,50,14
+    PUSHBUTTON      "Stop Rec",IDC_BUTTON_STOP_RECORD,180,325,50,14
+    PUSHBUTTON      "CloseChannel",IDC_BUTTON_CLOSECHANNEL,234,325,50,14
+    PUSHBUTTON      "DisConnect",IDC_BUTTON_CLOSECONNECT,288,343,50,14
+    DEFPUSHBUTTON   "Ok",IDOK,393,349,50,14
+    CONTROL         "",IDC_STATIC_IMAGE,"Static",SS_BLACKFRAME,14,125,176,
+                    144
+    GROUPBOX        "JBNVSDK",IDC_STATIC,7,115,338,248
+    LTEXT           "Name:",IDC_STATIC,16,102,34,8
+    LTEXT           "Pass:",IDC_STATIC,123,103,24,8
+    PUSHBUTTON      "Test",IDC_BUTTON_TEST,393,281,50,14
+    PUSHBUTTON      "UP",IDC_BUTTON_PTZ_UP,287,139,17,17
+    PUSHBUTTON      "Search Server",IDC_BUTTON_SEARCH_SERVER,281,97,70,16
+    GROUPBOX        "PTZ",IDC_STATIC,253,127,85,144
+    PUSHBUTTON      "D",IDC_BUTTON_PTZ_DOWN,287,175,17,17
+    PUSHBUTTON      "L",IDC_BUTTON_LEFT,267,157,17,17
+    PUSHBUTTON      "R",IDC_BUTTON_PTZ_RIGHT,308,157,17,17
+    LTEXT           "Focus",IDC_STATIC,288,205,20,8
+    PUSHBUTTON      "-",IDC_BUTTON_FOCUS_FAR,262,201,20,15
+    PUSHBUTTON      "+",IDC_BUTTON_FOCUS_NEAR,309,201,20,15
+    PUSHBUTTON      "Stop",IDC_BUTTON_PTZ_STOP,291,247,40,15
+    EDITTEXT        IDC_EDIT_CALL,258,225,30,15,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Call",IDC_BUTTON_CALL,291,225,40,15
+    PUSHBUTTON      "Local Snap",IDC_BUTTON_LOCAL_SNAPSHOT,18,343,50,15
+    PUSHBUTTON      "Remote Snap",IDC_BUTTON_REMOTE_SNAPSHOT,72,343,50,15
+    LTEXT           "Static:",IDC_STATIC_CHANNEL,13,273,175,8
+    CONTROL         "Sensor Out 1",IDC_CHECK_SENSOR_OUT1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,303,60,10
+    CONTROL         "Sensor Out 2",IDC_CHECK_SENSOR_OUT2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,80,303,65,10
+    LTEXT           "Sensor:",IDC_STATIC,13,291,80,8
+    PUSHBUTTON      "Zoom",IDC_BUTTON_ZOOM,126,343,50,15
+    CONTROL         "",IDC_STATIC_SECOND_IMAGE,"Static",SS_BLACKFRAME,193,
+                    125,55,50
+    PUSHBUTTON      "Second Win",IDC_BUTTON_SECOND_WND,198,185,50,14
+    CONTROL         "Slider1",IDC_SLIDER_BUFFER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,206,291,100,10
+    LTEXT           "Recv Buffer:",IDC_STATIC,206,275,60,8
+    CONTROL         "",IDC_STATIC_THREE_IMAGE,"Static",SS_BLACKFRAME,193,219,
+                    55,50
+    PUSHBUTTON      "Switch",IDC_BUTTON_SWITCH,180,343,50,15
+    LTEXT           "000",IDC_STATIC_MIN_BUFFER,312,289,14,9
+    PUSHBUTTON      "Status",IDC_BUTTON_GET_SERVER_STATE,234,343,50,14
+    PUSHBUTTON      "Auto",IDC_BUTTON_AUTO,257,247,32,15
+    PUSHBUTTON      "Setup Ocx Demo",IDC_BUTTON_OCX_TEST,356,148,84,22
+    PUSHBUTTON      "File Player Demo",IDC_BUTTON_FILE_PLAYER,356,124,83,22
+    PUSHBUTTON      "Talkback Demo",IDC_BUTTON_TALKBACK,356,172,83,22
+    PUSHBUTTON      "Remote Player Demo",IDC_BUTTON_REMOTE_PLAYER,356,196,83,
+                    22
+    CONTROL         "List1",IDC_LIST_SERVER,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,7,436,85
+END
+
+IDD_DIALOG_TALKBACK DIALOG DISCARDABLE  0, 0, 244, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Talkback"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Begin Talk",IDC_BUTTON_BEGINTALK,134,48,50,14
+    PUSHBUTTON      "Stop Talk",IDC_BUTTON_STOPTALK,187,48,50,14
+    EDITTEXT        IDC_EDIT_SERVER,66,7,97,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PORT,66,22,41,12,ES_AUTOHSCROLL
+    LTEXT           "Server Add",IDC_STATIC,7,7,50,13
+    LTEXT           "Server Port",IDC_STATIC,7,24,50,13
+END
+
+IDD_DIALOG_LOGON DIALOG DISCARDABLE  0, 0, 225, 112
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,108,91,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,168,90,50,14
+    LTEXT           "Server",IDC_STATIC,7,13,43,9
+    EDITTEXT        IDC_EDIT_SERVER,59,7,100,13,ES_AUTOHSCROLL
+    LTEXT           "Port",IDC_STATIC,7,30,50,11
+    EDITTEXT        IDC_EDIT_PORT,59,27,50,13,ES_AUTOHSCROLL
+    LTEXT           "UserName",IDC_STATIC,7,50,34,10
+    EDITTEXT        IDC_EDIT_USERNAME,59,47,70,13,ES_AUTOHSCROLL
+    LTEXT           "Password",IDC_STATIC,7,72,39,9
+    EDITTEXT        IDC_EDIT_PASSWORD,59,67,70,13,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_FACE_MANAGE DIALOG DISCARDABLE  0, 0, 357, 237
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Face Manager"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,245,216,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,300,216,50,14
+    PUSHBUTTON      "Search",IDC_BUTTON_SEARCH,287,7,63,20
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD,287,32,63,20
+    PUSHBUTTON      "Modify",IDC_BUTTON_MODIFY,287,56,63,20
+    PUSHBUTTON      "Del",IDC_BUTTON_DEL,287,80,63,20
+    CONTROL         "List1",IDC_LIST_FACE,"SysListView32",WS_BORDER | 
+                    WS_TABSTOP,7,7,273,196
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "JBSDKDemo\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "JBSDKDemo\0"
+            VALUE "LegalCopyright", "CopyRight (C) 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "JBSDKDemo.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "JBSDKDemo\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_JBSDKDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 443
+        VERTGUIDE, 356
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 363
+        HORZGUIDE, 314
+    END
+
+    IDD_DIALOG_TALKBACK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_DIALOG_LOGON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_DIALOG_FACE_MANAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 350
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 230
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "JBSDKDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
